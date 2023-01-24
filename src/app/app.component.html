@@ -1,0 +1,11 @@
+<app-create-onomatopia
+    (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"
+></app-create-onomatopia>
+
+<div *ngIf="onomatopoeias.length !== 0">
+  <h1>liste des "Onomatopia" saisies : </h1>
+  <ul *ngFor="let Onomatopia of onomatopoeias">
+    <li> {{ Onomatopia }}  </li>
+  </ul>
+</div>
+
